@@ -5,13 +5,13 @@
 </template>
 
 <script>
-import bad from './bad';
+import first from './first';
 
 export default {
   name: 'App',
   data() {
     return {
-      a: bad()
+      a: first()
     };
   }
 };

@@ -8,8 +8,8 @@ const renderer = Renderer.createBundleRenderer(bundle);
 app.get('/', (req, res, next) => {
   const context = {};
   renderer.renderToString(context, (err, str) => {
-    if (err) return next(err);
-    res.end(str);
+    if (err) res.status(500).end(err.stack);
+    else res.end(str);
   });
 });
 

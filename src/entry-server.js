@@ -1,8 +1,12 @@
 import Vue from 'vue';
-import App from './App.vue';
+// import App from './App.vue';
+const App = () => import('./App.vue');
 
 export default function createApp() {
   return new Vue({
-    render: h => h(App)
+    template: '<App />',
+    components: {
+      App
+    }
   });
 };
