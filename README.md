@@ -1,3 +1,8 @@
+# Issue
+
+This issue is about rendering a component on the server (SSR) and using asynchronous / lazy-loaded components. When there's an error in a lazy-loaded component, `renderToString` is not called with an error, but instead the error gets logged to the console and (most importantly) source-maps are not used, making the error very difficult to debug.
+
+
 ## Repro:
 
 1. `npm start`
