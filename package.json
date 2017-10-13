@@ -4,16 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack && node server.js"
+    "start": "rm -rf ./target && webpack && node server.js"
   },
   "author": "Yuriy Nemtsov <nemtsov@gmail.com> (http://yuriynemtsov.com/)",
   "license": "ISC",
   "dependencies": {
     "express": "^4.16.2",
-    "vue": "^2.4.4",
+    "vue": "^2.5.0",
     "vue-loader": "^13.3.0",
-    "vue-server-renderer": "^2.4.4",
-    "vue-template-compiler": "^2.4.4",
+    "vue-server-renderer": "^2.5.0",
+    "vue-template-compiler": "^2.5.0",
     "webpack": "^3.6.0"
   }
 }
