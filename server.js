@@ -6,8 +6,7 @@ const app = express();
 const renderer = Renderer.createBundleRenderer(bundle);
 
 app.get('/', (req, res, next) => {
-  const context = {};
-  renderer.renderToString(context)
+  renderer.renderToString()
     .catch(err => res.status(500).end(err.stack))
     .then(str => res.end(str));
 });
